@@ -38,6 +38,9 @@ public class UserThread extends Thread {
                 if (clientMessage.equalsIgnoreCase("bye")) {
                     break;
                 }
+                if (clientMessage.equalsIgnoreCase("list")) {
+                    printUsers();
+                }
             }
 
             server.removeUser(userName, this);

@@ -6,7 +6,8 @@ import java.net.UnknownHostException;
 
 /**
  * This is the client. You can run multiple instances of
- * this program. Type "bye" to terminate the program.
+ * this program. Type "bye" to terminate the program or
+ * "list" to show list of connected users.
  */
 public class ChatClient {
     private String hostname;
