@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0a59095-0630-4d1f-aa00-8750815b3dfb" name="Changes" comment=".idea">
+    <list default="true" id="b0a59095-0630-4d1f-aa00-8750815b3dfb" name="Changes" comment="Added examples of client-server apps with TCP and UDP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example/ChatServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example/ClientThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/example/ClientWriter.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +37,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "deletionFromPopupRequiresConfirmation": "false",
-    "last_opened_file_path": "D:/My Documents/FINKI/VII semestar/Distribuirani sistemi/Labs/ds-lab-emilijan-koteski-192025/ds-lab",
+    "last_opened_file_path": "C:/Users/Emilijan/IdeaProjects/ds-lab",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -54,7 +50,7 @@
       <recent name="chat.udp.server" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TServer">
+  <component name="RunManager" selected="Application.chat.udp.server.Server">
     <configuration name="ChatClient" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chat.tcp.client.ChatClient" />
       <module name="ds-lab" />
@@ -74,6 +70,32 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="chat.tcp.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chat.udp.client.Client" />
+      <module name="ds-lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chat.udp.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chat.udp.client.Client" />
+      <module name="ds-lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chat.udp.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,7 +147,7 @@
       <module name="ds-lab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="chat.udp.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,25 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TClient" />
+    <configuration name="chat.udp.server.Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chat.udp.server.Server" />
       <module name="ds-lab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TServer" />
-      <module name="ds-lab" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="chat.udp.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,7 +173,7 @@
       <module name="ds-lab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="chat.udp.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,8 +183,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TClient" />
-        <item itemvalue="Application.TServer" />
+        <item itemvalue="Application.chat.udp.server.Server" />
         <item itemvalue="Application.test.Client" />
         <item itemvalue="Application.Client" />
       </list>
@@ -197,6 +205,10 @@
       <workItem from="1668337134549" duration="42000" />
       <workItem from="1668337487644" duration="18218000" />
       <workItem from="1668361063109" duration="298000" />
+      <workItem from="1668372833818" duration="297000" />
+      <workItem from="1668852497416" duration="2255000" />
+      <workItem from="1668941515259" duration="71000" />
+      <workItem from="1669562263584" duration="1421000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1668003853625</created>
@@ -233,7 +245,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668273596713</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Created Chat App using UDP">
+      <created>1668373014715</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668373014715</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added examples of client-server apps with TCP and UDP">
+      <created>1668373102617</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668373102617</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +282,8 @@
     <MESSAGE value="Added project description" />
     <MESSAGE value="Added &quot;list&quot; functionality that lists connected users when invoked" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="Created Chat App using UDP" />
+    <MESSAGE value="Added examples of client-server apps with TCP and UDP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added examples of client-server apps with TCP and UDP" />
   </component>
 </project>
